@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Importance smooth */
+html {
+    scroll-behavior: smooth; 
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('./assets/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+div.nav{
+  padding: 0 2rem;
+  color:white;
+  font-family: 'Roboto Bold';
+  background-color: #C7CA3A;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 70px;
+  margin-right: 3rem;
+}
+
+.navButton{
+  padding: 0 1rem;
+  width: 120px;
+  height: 70px;
+  border:none;
+  background-color: #C7CA3A;
+  color:white;
+  font-family: 'Roboto Bold';
+  font-size: 1rem;
+}
+
+.navButton:hover{
+  cursor: pointer;
+  background-color: #767722;
+}
+
+

@@ -1,0 +1,41 @@
+.home{
+    margin-top: 5rem;
+    display:flex;
+    gap: 25px;
+    justify-content: center;
+    font-family: 'Roboto';
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1rem;
+}
+.fontBold{
+    font-family: 'Roboto Bold';
+}
+.text > *{
+    margin-bottom: 1.5rem;
+}
+
+.text > button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-family: 'Roboto Bold';
+    font-size: 1rem;
+    color: white;
+    background-color: #2CC9C9;
+}
+.text > button:hover{
+    cursor: pointer;
+    background-color:#1b7474
+}
+.shoppingImage{
+    width:400px;
+    height: auto;
+}
+
+@media only screen and (min-width: 1500px) {
+    .shoppingImage{
+        width:700px;
+        height: auto;
+    }
+  }
