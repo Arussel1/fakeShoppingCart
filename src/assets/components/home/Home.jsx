@@ -11,7 +11,7 @@ export default function Home(){
     return (
         <div id='home'>
             <div id="text">
-                <h1>The best shopping web in 2024</h1>
+                <h1 className='fontBold'>The best shopping web in 2024</h1>
                 <p>Come in and discover the varieties of items in our website. Click below to learn more</p>
                 <button>Shop Now</button>
             </div>

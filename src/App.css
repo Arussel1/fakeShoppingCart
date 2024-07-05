@@ -1,3 +1,12 @@
+:root{
+  --nav-color: #C7CA3A;
+  --mint-color: #2CC9C9;
+  --mint-color-hover: #1b7474;
+  --white: #FFF;
+  --black: #000;
+  --default-radius: 8px;
+  
+}
 *,
 *::before,
 *::after {
@@ -23,11 +32,14 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+.fontBold{
+  font-family: 'Roboto Bold';
+}
 div.nav{
   padding: 0 2rem;
-  color:white;
+  color: var(--white);
   font-family: 'Roboto Bold';
-  background-color: #C7CA3A;
+  background-color: var(--nav-color);
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -44,8 +56,8 @@ div.nav{
   width: 120px;
   height: 70px;
   border:none;
-  background-color: #C7CA3A;
-  color:white;
+  background-color: var(--nav-color);
+  color:var(--white);
   font-family: 'Roboto Bold';
   font-size: 1rem;
 }
@@ -55,4 +67,20 @@ div.nav{
   background-color: #767722;
 }
 
+.cart{
+  position: relative;
+}
 
+.item{
+  position: absolute;
+  top: 18px;
+  left:91%
+}
+.itemText{
+  position: absolute;
+  top: 18px;
+  left:91.7%;
+}
+.hidden{
+  visibility: hidden;
+}
