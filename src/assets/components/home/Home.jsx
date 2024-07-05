@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import shoppingImage from './../../images/ShoppingImage.png'
 import classes from './home.module.css'
-export default function Home(){
+ const Home = () => {
     useEffect( () => {
         document.querySelector('#home').className = classes.home;
         document.querySelector('#shoppingImage').className = classes.shoppingImage;
@@ -19,3 +19,5 @@ export default function Home(){
         </div>
     )
 }
+
+export default Home;

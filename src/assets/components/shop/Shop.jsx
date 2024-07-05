@@ -37,7 +37,7 @@ const Shop = () => {
             document.querySelector('#sortLists').classList.remove(classes.hidden);
         }
     },[sortList])
-
+    // Create cards based on fetch data
     const cards = result.map( (item) => 
         <button className={classes.card} key={item.id}>
             <img src={item.image} alt="itemImage" className={classes.displayImage}/>

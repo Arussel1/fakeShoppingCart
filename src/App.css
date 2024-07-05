@@ -5,7 +5,7 @@
   --white: #FFF;
   --black: #000;
   --default-radius: 8px;
-  
+  --default-font-size: 16px;
 }
 *,
 *::before,

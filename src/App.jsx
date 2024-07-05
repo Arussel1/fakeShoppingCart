@@ -4,6 +4,7 @@ import Cart from './assets/images/cart.svg'
 import Circle from './assets/images/circle.svg'
 import Home from './assets/components/home/Home.jsx'
 import Shop from './assets/components/shop/Shop.jsx'
+import Detail from './assets/components/detail/detail.jsx';
 import './App.css'
 function App() {
   const [items,getItems] = useState(0);
@@ -18,7 +19,7 @@ function App() {
   }, [items]);
 
   return (
-    <div id='container'>
+    <div>
     <div id="nav">
       <img src={Logo} alt="logo" className="logo" />
       <button className='navButton'>Home</button>
@@ -32,7 +33,7 @@ function App() {
         </div>
       </button>
     </div>
-    <Shop></Shop>
+    <Detail></Detail>
     </div>
   )
 }
