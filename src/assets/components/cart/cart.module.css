@@ -75,6 +75,7 @@
     font-family: 'Roboto Bold';
     background-color: var(--mint-color);
     color:white;
+    font-size: 1rem;
 }
 
 .cartContainer > p {
