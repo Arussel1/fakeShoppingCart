@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    padding: 2rem 4rem;
+    font-family: 'Roboto';
+    font-size: var(--default-font-size);
+}
+.container > *{
+    margin-right: 2rem;
+}
+.container > img{
+    background-color: rgba(209, 195, 195, 0.411);
+    padding: 0 1rem;
+    border-radius: var(--default-radius);
+}
+.top{
+    display: flex;
+    align-items: center;
+
+}
+.top > button{
+    margin-left: auto;
+    background-color: var(--white);
+    border: none;
+    border-radius: var(--default-radius);
+}
+
+.top > button:hover{
+    cursor: pointer;
+    background-color: rgba(194, 187, 187, 0.438);
+}
+
+.info{
+    border: 1px solid black;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--default-radius);
+}
+.info > *{
+    margin-bottom: 1rem;
+}
+.input{
+    display: flex;
+    gap:2rem;
+}
+.input > button{
+    border: none;
+    border-radius: 50% ;
+    background-color: var(--mint-color);
+    height: 30px;
+    width: 30px;
+}
+
+.input > button:hover, .return > button:hover{
+    cursor: pointer;
+    background-color: var(--mint-color-hover);
+}
+
+.input > input{
+    width: 300px;
+    text-align: center;
+    flex: 1 1 0;
+    border-radius: var(--default-radius);
+    font-size: var(--default-font-size);
+}
+
+.cartContainer > button, .noItemText > button {
+    border-radius: 8px;
+    margin: 2rem 4rem;
+    width: 90%;
+    height:30px;
+    font-family: 'Roboto Bold';
+    background-color: var(--mint-color);
+    color:white;
+}
+
+.cartContainer > p {
+    margin: 0 4rem;
+}
+
+.cartContainer > button:hover, .noItemText > button:hover{
+    cursor: pointer;
+    background-color: var(--mint-color-hover);
+}
+.total{
+    margin: 2rem 4rem 0;
+    font-family: 'Roboto Bold';
+}
+
+.noItemText {
+    text-align: center;
+    font-family: 'Roboto Bold';
+    margin-top: 2rem;
+}

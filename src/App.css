@@ -67,19 +67,18 @@ div.nav{
   background-color: #767722;
 }
 
-.cart{
+.itemContainer{
   position: relative;
+  top:-55%;
+  left:10%;
 }
 
 .item{
   position: absolute;
-  top: 18px;
-  left:91%
 }
 .itemText{
   position: absolute;
-  top: 18px;
-  left:91.7%;
+  left:57%
 }
 .hidden{
   visibility: hidden;

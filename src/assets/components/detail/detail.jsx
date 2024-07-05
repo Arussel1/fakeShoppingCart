@@ -5,7 +5,7 @@ import Plus from './../../images/plus.svg'
 import Minus from './../../images/minus.svg'
 import classes from './detail.module.css'
 
-const Detail = ({ image, title, price, description, items, addItems }) => {
+const Detail = ({ image, title, price, description, addItems }) => {
     const [counter, setCounter] = useState(1);
     const handleInputChange = (e) =>{
         if(Number(e.target.value) > 1){
@@ -24,7 +24,7 @@ const Detail = ({ image, title, price, description, items, addItems }) => {
     }
     
     const handleItemsChange = () => {
-        addItems({ title, price, counter });
+        addItems({ id, title, price, counter, image });
     };
 
 

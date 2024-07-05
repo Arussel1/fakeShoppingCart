@@ -6,6 +6,7 @@ import Home from './assets/components/home/Home.jsx'
 import Shop from './assets/components/shop/Shop.jsx'
 import Detail from './assets/components/detail/detail.jsx';
 import Contact from './assets/components/contact/contact.jsx';
+import CartComponent from './assets/components/cart/Cart.jsx';
 import './App.css'
 function App() {
   const [items,setItems] = useState([]);
@@ -40,7 +41,7 @@ function App() {
         </div>
       </button>
     </div>
-    <Contact></Contact>
+    <CartComponent itemsList={items} setItemsList={setItems}></CartComponent>
     </div>
   )
 }

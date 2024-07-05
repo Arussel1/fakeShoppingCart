@@ -43,7 +43,8 @@ const Shop = () => {
             <img src={item.image} alt="itemImage" className={classes.displayImage}/>
             <p>{item.title}</p>
             <p>$ {item.price}</p>
-        </button>)
+        </button>
+        );
     return (
         <>
         <div id="menu">
