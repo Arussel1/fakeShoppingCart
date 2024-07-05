@@ -8,9 +8,12 @@
     margin-right: 2rem;
 }
 .container > img{
-    background-color: rgba(209, 195, 195, 0.411);
     padding: 0 1rem;
     border-radius: var(--default-radius);
+    background-color: transparent;
+    max-width: 200px;
+    max-height: auto;
+
 }
 .info{
     border: 1px solid black;

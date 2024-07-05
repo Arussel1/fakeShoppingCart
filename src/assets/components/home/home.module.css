@@ -19,7 +19,7 @@
     font-family: 'Roboto Bold';
     font-size: 1rem;
     color: var(--white);
-    background-color: var;
+    background-color: var(--mint-color);
 }
 .text > button:hover{
     cursor: pointer;

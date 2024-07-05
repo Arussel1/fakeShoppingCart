@@ -8,7 +8,9 @@
     margin-right: 2rem;
 }
 .container > img{
-    background-color: rgba(209, 195, 195, 0.411);
+    background-color: transparent;
+    max-width: 200px;
+    max-height: auto;
     padding: 0 1rem;
     border-radius: var(--default-radius);
 }

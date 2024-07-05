@@ -28,7 +28,6 @@ const CartComponent = ({ itemsList, setItemsList}) => {
         setItemsList(newItemsList);
     }
     const itemDisplay = itemsList.map((item) => {
-        console.log(item);
         return (
             <div key={item.id} className={classes.container}>
                 <img src={item.image} alt="itemImage" />

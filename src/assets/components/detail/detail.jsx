@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Slipper from './../../images/slipperNoBackground.png'
 import Plus from './../../images/plus.svg'
 import Minus from './../../images/minus.svg'
 import classes from './detail.module.css'
 
-const Detail = ({ image, title, price, description, addItems }) => {
+const Detail = ({ addItems }) => {
+    const location = useLocation();
+    const navigateTo = useNavigate();
+    const { id, image, title, price, description } = location.state;
     const [counter, setCounter] = useState(1);
     const handleInputChange = (e) =>{
         if(Number(e.target.value) > 1){
@@ -27,6 +31,9 @@ const Detail = ({ image, title, price, description, addItems }) => {
         addItems({ id, title, price, counter, image });
     };
 
+    const handleShopClick = () =>{
+        navigateTo("/shop");
+      }
 
     useEffect( () => {
         document.querySelector('#container').className = classes.container;
@@ -53,7 +60,7 @@ const Detail = ({ image, title, price, description, addItems }) => {
                         </button>
                     </div>
                     <div id="return">
-                        <button className='fontBold'>Return to Shop</button>
+                        <button className='fontBold' onClick={handleShopClick}>Return to Shop</button>
                         <button className='fontBold' onClick={handleItemsChange}>Add to Cart</button>
                     </div>
                 </div>
