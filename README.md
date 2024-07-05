@@ -1,3 +1,3 @@
 Fake shopping cart made by HTML, CSS, JS with React and Vite <br>
 
-Live: Not yet ready
+Live: <a href="https://fake-shopping-cart-tau.vercel.app/cart">Click here</a>
