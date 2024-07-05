@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Delete from './../../images/trashcan.svg';
 import Plus from './../../images/plus.svg';
 import Minus from './../../images/minus.svg';
@@ -74,6 +74,7 @@ const CartComponent = ({ itemsList, setItemsList}) => {
 
 CartComponent.propTypes = {
     itemsList: PropTypes.array.isRequired,
+    setItemsList: PropTypes.func.isRequired,
 };
 
 export default CartComponent;

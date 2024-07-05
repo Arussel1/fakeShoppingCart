@@ -6,11 +6,10 @@ import arrowDown from './../../images/arrowDown.svg';
 const Shop = () => {
     const navigate = useNavigate();
     const [result,setResult] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
     const [sortList,setSortList] = useState(false);
     const [sortOrder, setSortOrder] = useState('');
     const [searchQuery, setSearchQuery] = useState('')
-    const toggleSort = (e) =>{
+    const toggleSort = () =>{
         setSortList(prev => !prev);
     }
     const handleCardClick = (item) => {
@@ -19,11 +18,9 @@ const Shop = () => {
     // data fetching from REST API
     useEffect(() => {
         const fetchData = async () => {
-            setIsLoading(true);
             const res = await fetch('https://fakestoreapi.com/products?limit=20');
             const result = await res.json();
             setResult(result);
-            setIsLoading(false);
         }
         fetchData();
     },[]);
