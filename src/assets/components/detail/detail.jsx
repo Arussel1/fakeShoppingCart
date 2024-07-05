@@ -5,23 +5,28 @@ import Plus from './../../images/plus.svg'
 import Minus from './../../images/minus.svg'
 import classes from './detail.module.css'
 
-const Detail = ({ image, title, price, description }) => {
+const Detail = ({ image, title, price, description, items, addItems }) => {
     const [counter, setCounter] = useState(1);
     const handleInputChange = (e) =>{
         if(Number(e.target.value) > 1){
-            setCounter(prev => Number(e.target.value));
+            setCounter(Number(e.target.value));
         }else{
             setCounter(1);
         }
     }
     const counterDecrement = (e) => {
         if(counter > 1){
-            setCounter(prev => prev - 1);
+            setCounter(counter - 1);
         }
     }
     const counterIncrement = (e) =>{
-        setCounter(prev => prev + 1);
+        setCounter(counter + 1);
     }
+    
+    const handleItemsChange = () => {
+        addItems({ title, price, counter });
+    };
+
 
     useEffect( () => {
         document.querySelector('#container').className = classes.container;
@@ -49,7 +54,7 @@ const Detail = ({ image, title, price, description }) => {
                     </div>
                     <div id="return">
                         <button className='fontBold'>Return to Shop</button>
-                        <button className='fontBold'>Add to Cart</button>
+                        <button className='fontBold' onClick={handleItemsChange}>Add to Cart</button>
                     </div>
                 </div>
             </div>
