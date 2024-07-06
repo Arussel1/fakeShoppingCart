@@ -24,25 +24,7 @@ const Shop = () => {
         }
         fetchData();
     },[]);
-    
-    // CSS Module
-    useEffect(() => {
-        document.querySelector('label').className = classes.label;
-        document.querySelector('input').className = classes.input;
-        document.querySelector('#menu').className = classes.menu;
-        document.querySelector('#sortButton').className = classes.sortButton;
-        document.querySelector('#cards').className = classes.cards;
-        document.querySelector('#sortLists').className = classes.sortLists;
-    },[]);
 
-    // Toggle Sort List
-    useEffect( () => {
-        if(!sortList){
-            document.querySelector('#sortLists').classList.add(classes.hidden);
-        }else{
-            document.querySelector('#sortLists').classList.remove(classes.hidden);
-        }
-    },[sortList]);
 
     // Sort the results
     useEffect(() => {
@@ -78,28 +60,30 @@ const Shop = () => {
             <p>$ {item.price}</p>
         </button>
     ));
+
     return (
         <>
-        <div id="menu">
-            <label htmlFor="search">
-                <input 
+        <div className={classes.menu}>
+            <label htmlFor="search" className={classes.label}>
+                <input
+                    className={classes.input} 
                     type="text" 
                     placeholder="Search.."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)} />
             </label>
-            <button id="sortButton" onClick={toggleSort}>
+            <button className={classes.sortButton} onClick={toggleSort}>
                 Sort
                 <img src={arrowDown} alt="arrow down"/>
             </button>
-            <div id="sortLists">
+            <div className={`${classes.sortLists} ${!sortList ? 'hidden' : ''}`}>
                     <button onClick={() => setSortOrder('A-Z')} >From A-Z</button>
                     <button onClick={() => setSortOrder('Z-A')}> From Z-A</button>
                     <button onClick={() => setSortOrder('High-Low')}>From High to Low</button>
                     <button onClick={() => setSortOrder('Low-High')}>From Low to High</button>
                 </div>
         </div>
-        <div id="cards">
+        <div className={classes.cards}>
             {cards}
         </div>
         </>

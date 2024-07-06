@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 import Delete from './../../assets/images/trashcan.svg';
 import Plus from './../../assets/images/plus.svg';
 import Minus from './../../assets/images/minus.svg';
@@ -8,13 +7,6 @@ import classes from './cart.module.css';
 
 const CartComponent = ({ itemsList, setItemsList}) => {
     const navigateTo = useNavigate();
-    useEffect( () => {
-        if (itemsList.length === 0){
-            document.querySelector("#noItemText").className = classes.noItemText;
-        }else{
-            document.querySelector("#cartContainer").className = classes.cartContainer;
-        }
-    }, [itemsList])
     
     const handleCounterChange = (id, delta) => {
         setItemsList(prevCounterList =>
@@ -65,13 +57,13 @@ const CartComponent = ({ itemsList, setItemsList}) => {
 
 
     return (
-        itemDisplay.length !== 0 ? <div id="cartContainer">
+        itemDisplay.length !== 0 ? <div className={classes.cartContainer}>
             {itemDisplay}
             <div className={classes.total}>
                 Total: ${total.toFixed(2)}
             </div>
             <button>Checkout</button>
-        </div> : <div id="noItemText">
+        </div> : <div className={classes.noItemText}>
             <p >No item to checkout right now</p>
             <button onClick={handleShopClick}>Return to Shop</button>
         </div>
