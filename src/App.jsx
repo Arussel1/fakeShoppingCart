@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Logo from './assets/images/logoNoBackground.png'
 import Cart from './assets/images/cart.svg'
 import Circle from './assets/images/circle.svg'
-import Home from './assets/components/home/Home.jsx'
-import Shop from './assets/components/shop/Shop.jsx'
-import Detail from './assets/components/detail/detail.jsx';
-import Contact from './assets/components/contact/contact.jsx';
-import CartComponent from './assets/components/cart/Cart.jsx';
+import Home from './components/home/Home.jsx'
+import Shop from './components/shop/Shop.jsx'
+import Detail from './components/detail/detail.jsx';
+import Contact from './components/contact/contact.jsx';
+import CartComponent from './components/cart/Cart.jsx';
 import './App.css'
 function App() {
   const navigateTo = useNavigate();

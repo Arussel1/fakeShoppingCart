@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import classes from './shop.module.css';
-import arrowDown from './../../images/arrowDown.svg';
+import arrowDown from './../../assets/images/arrowDown.svg';
 
 const Shop = () => {
     const navigate = useNavigate();

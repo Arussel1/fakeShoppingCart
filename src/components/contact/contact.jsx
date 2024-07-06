@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import Facebook from './../../images/facebook.svg'
-import Instagram from './../../images/instagram.svg'
-import Twitter from './../../images/twitter.svg'
-import Logo from './../../images/logoNoBackground.png'
+import Facebook from './../../assets/images/facebook.svg'
+import Instagram from './../../assets/images/instagram.svg'
+import Twitter from './../../assets/images/twitter.svg'
+import Logo from './../../assets/images/logoNoBackground.png'
 import classes from './contact.module.css'
 
 const Contact = () => {

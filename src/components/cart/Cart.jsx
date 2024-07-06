@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import Delete from './../../images/trashcan.svg';
-import Plus from './../../images/plus.svg';
-import Minus from './../../images/minus.svg';
+import Delete from './../../assets/images/trashcan.svg';
+import Plus from './../../assets/images/plus.svg';
+import Minus from './../../assets/images/minus.svg';
 import classes from './cart.module.css';
 
 const CartComponent = ({ itemsList, setItemsList}) => {

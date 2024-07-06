@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import shoppingImage from './../../images/ShoppingImage.png'
+import shoppingImage from './../../assets/images/ShoppingImage.png'
 import { useNavigate } from 'react-router-dom';
 import classes from './home.module.css'
  const Home = () => {

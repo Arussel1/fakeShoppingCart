@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Plus from './../../images/plus.svg'
-import Minus from './../../images/minus.svg'
+import Plus from './../../assets/images/plus.svg'
+import Minus from './../../assets/images/minus.svg'
 import classes from './detail.module.css'
 
 const Detail = ({ addItems }) => {
